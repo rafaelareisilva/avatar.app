@@ -1,8 +1,10 @@
+namespace Modelos
+{
 public class Fornecedor : pessoa
 {
     string nome;
     string telefone;
-    string id;
+    int id;
     string tipodoproduto;
     string unidade;
      Int64 id;
@@ -27,11 +29,11 @@ public class Fornecedor : pessoa
     }
 
 
-      public void SetId (string id)
+      public void SetId (int id)
     {
         this.id= id;
     }
-    public string GetId()
+    public int GetId()
     {
         return id;
     }
@@ -57,5 +59,7 @@ public class Fornecedor : pessoa
     }
 
     
+
+}
 
 }

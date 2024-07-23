@@ -1,8 +1,10 @@
+namespace Modelos
+{
 public class Cliente : pessoa
 {
     string nome;
     string telefone;
-    string id;
+    int id;
     string endereco
       Int64 id;
         public void SetNome (string nome)
@@ -25,11 +27,11 @@ public class Cliente : pessoa
     }
 
 
-      public void SetId (string id)
+      public void SetId (int id)
     {
         this.id= id;
     }
-    public string GetId()
+    public int GetId()
     {
         return id;
     }
@@ -42,4 +44,5 @@ public class Cliente : pessoa
     {
         return endereco;
     }
+}
 }

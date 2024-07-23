@@ -1,15 +1,17 @@
+namespace Modelos
+{
 public class CadastroMp
 {
-    string id;
+    int id;
     string tipodoproduto;
     string unidade;
      Int64 id;
      
-      public void SetId (string id)
+      public void SetId (int id)
     {
         this.id= id;
     }
-    public string GetId()
+    public int GetId()
     {
         return id;
     }
@@ -36,4 +38,5 @@ public class CadastroMp
 
     
 
+}
 }

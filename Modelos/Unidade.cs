@@ -1,7 +1,9 @@
+namespace Modelos
+{
 public class Unidade
 {
     string nome;
-    string id;
+    int id;
     Int64 id;
      public void SetNome (string nome)
     {
@@ -13,13 +15,14 @@ public class Unidade
     }
 
     
-      public void SetId (string id)
+      public void SetId (int id)
     {
         this.id= id;
     }
-    public string GetId()
+    public int GetId()
     {
         return id;
     }
 
+}
 }
