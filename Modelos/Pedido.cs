@@ -1,7 +1,7 @@
 
 namespace Modelos
 {
-    public class Pedido : pessoa
+    public class Pedido 
     {
         string nome;
         string telefone;

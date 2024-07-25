@@ -1,6 +1,6 @@
 namespace Modelos
 {
-    public class Corte : pessoa
+    public class Corte
     {
         string nome;
         string telefone;

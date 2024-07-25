@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.CadastroCliente"
+             Title="Cadastro Cliente">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Cadastro Cliente" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+            
+            <Entry x:Name="NomeEntry" Placeholder="Nome"/>
+            <Entry x:Name="TelefoneEntry" Placeholder="Telefone"/>
+            <Entry x:Name="EnderecoEntry" Placeholder="Endereço"/>
+            
+            <Button Text="Cadastrar" 
+                    BackgroundColor="#87CEEB" 
+                    TextColor="White" 
+                    Clicked="OnCadastrarClicked"/>
+            
+            <Button Text="Voltar" 
+                    Clicked="OnVoltarClicked"/>
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

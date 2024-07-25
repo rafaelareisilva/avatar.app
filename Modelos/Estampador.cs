@@ -1,14 +1,12 @@
 namespace Modelos
 {
-public class VendaProduto 
+public class Estampador : pessoa
 {
     string nome;
     string telefone;
     int id;
-    string produto;
-    string unidade;
-     Int64 id;
-
+    string endereco;
+      Int64 id;
     public void SetNome (string nome)
     {
         this.nome= nome;
@@ -38,25 +36,13 @@ public class VendaProduto
         return id;
     }
 
-   
-    public void SetProduto (string produto)
+          public void SetEndereco (string endereco)
     {
-        this.produto= produto;
+        this.endereco= endereco;
     }
-    public string GetProduto()
+    public string GetEndereco()
     {
-        return produto;
+        return endereco;
     }
-
-
-    public void SetUnidade (string unidade)
-    {
-        this.unidade= unidade;
-    }
-    public string GetUnidade()
-    {
-        return unidade;
-    }
-
 }
 }

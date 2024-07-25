@@ -1,6 +1,6 @@
 namespace Modelos
 {
-    public class Estampa : pessoa
+    public class Estampa 
     {
         string nome;
         string telefone;

@@ -1,6 +1,6 @@
 namespace Modelos
 {
-    public class Costura : pessoa
+    public class Costura 
     {
         string nome;
         string telefone;

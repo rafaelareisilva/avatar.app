@@ -1,6 +1,6 @@
 namespace Modelos
 {
-public class CompraMp : pessoa
+public class CompraMp 
 {
     string nome;
     string telefone;
