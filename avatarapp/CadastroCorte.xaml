@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.CadastroCorte"
+             Title="Cadastro Corte">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Cadastro Corte" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center" />
+
+            <Label Text="Nome:" />
+            <Picker x:Name="NomePicker" />
+
+            <Label Text="Produto:" />
+            <Picker x:Name="ProdutoPicker" />
+
+            <Label Text="Quantidade:" />
+            <Entry x:Name="QuantidadeEntry" Keyboard="Numeric" />
+
+            <Label Text="Entrada:" />
+            <Entry x:Name="EntradaEntry" Keyboard="Numeric" />
+
+            <Label Text="Prazo:" />
+            <Entry x:Name="PrazoEntry" Keyboard="Numeric" />
+
+            <Label Text="Características do Produto:" />
+            <StackLayout Orientation="Horizontal">
+                <Image Source="bucket_icon.png" WidthRequest="30" HeightRequest="30"/>
+                <Button Text="+" WidthRequest="30" HeightRequest="30" />
+            </StackLayout>
+
+            <Label Text="Cor:" />
+            <Entry x:Name="CorEntry" />
+
+            <Button Text="Cadastrar" 
+                    x:Name="CadastrarButton" 
+                    BackgroundColor="#ADD8E6" />
+
+            <Button Text="Voltar" 
+                    x:Name="VoltarButton" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

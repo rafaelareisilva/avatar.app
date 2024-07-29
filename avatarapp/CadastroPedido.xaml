@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.CadastroPedido"
+             Title="Cadastro Pedido">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Cadastro Pedido" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <StackLayout>
+                <Label Text="Nome Cliente:" />
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="NomeClienteEntry" Placeholder="Nome Cliente" HorizontalOptions="FillAndExpand"/>
+                    <Button Text="▼" WidthRequest="40" Clicked="OnSelectClienteClicked"/>
+                </StackLayout>
+            </StackLayout>
+
+            <Label Text="Telefone:" />
+            <Entry x:Name="TelefoneEntry" Placeholder="Telefone"/>
+
+            <Label Text="Produto:" />
+            <Entry x:Name="ProdutoEntry" Placeholder="Produto"/>
+
+            <StackLayout>
+                <Label Text="Unidade de Medida:" />
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="UnidadeMedidaEntry" Placeholder="Unidade de Medida" HorizontalOptions="FillAndExpand"/>
+                    <Button Text="▼" WidthRequest="40" Clicked="OnSelectUnidadeMedidaClicked"/>
+                </StackLayout>
+            </StackLayout>
+
+            <Label Text="Valor:" />
+            <Entry x:Name="ValorEntry" Placeholder="Valor" Keyboard="Numeric"/>
+
+            <Label Text="Desconto:" />
+            <Entry x:Name="DescontoEntry" Placeholder="Desconto" Keyboard="Numeric"/>
+
+            <Label Text="Prazo:" />
+            <Entry x:Name="PrazoEntry" Placeholder="Prazo"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Total:" VerticalOptions="Center"/>
+                <Entry x:Name="TotalEntry" Placeholder="Total" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <Button Text="Cadastrar" 
+                    BackgroundColor="#87CEEB" 
+                    TextColor="White" 
+                    Clicked="OnCadastrarClicked"
+                    HorizontalOptions="Center"/>
+            
+            <Button Text="Voltar" 
+                    Clicked="OnVoltarClicked"
+                    HorizontalOptions="Center"/>
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

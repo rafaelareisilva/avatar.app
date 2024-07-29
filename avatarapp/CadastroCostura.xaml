@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.CadastroCostura"
+             Title="Cadastro Costura">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Cadastro Costura" 
+                   FontAttributes="Bold" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center" 
+                   Margin="0,0,0,20"/>
+
+            <Label Text="Nome:"/>
+            <Picker x:Name="nomePicker"/>
+
+            <Label Text="Produto:"/>
+            <Picker x:Name="produtoPicker"/>
+
+            <Label Text="Quantidade:"/>
+            <Entry x:Name="quantidadeEntry" Keyboard="Numeric"/>
+
+            <Label Text="Entrada:"/>
+            <Entry x:Name="entradaEntry"/>
+
+            <Label Text="Prazo:"/>
+            <Entry x:Name="prazoEntry"/>
+
+            <Label Text="Características do Produto:"/>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="carrinho.png" WidthRequest="30" HeightRequest="30"/>
+                <Button Text="+" WidthRequest="30" HeightRequest="30"/>
+            </StackLayout>
+
+            <Label Text="Cor:"/>
+            <Entry x:Name="corEntry"/>
+
+            <Button Text="Cadastrar" 
+                    BackgroundColor="#2196F3" 
+                    TextColor="White" 
+                    CornerRadius="5" 
+                    Margin="0,20,0,0"/>
+
+            <Button Text="Voltar" 
+                    BackgroundColor="#D3D3D3" 
+                    TextColor="Black" 
+                    CornerRadius="5" 
+                    Margin="0,10,0,0"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

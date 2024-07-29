@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.CadastroFornecedor"
+             Title="Cadastro Fornecedor">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+
+            <Label Text="Cadastro Fornecedor"
+                   FontSize="Large"
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="NomeEntry"
+                   Placeholder="NOME:" />
+
+            <Entry x:Name="TelefoneEntry"
+                   Placeholder="TELEFONE:"
+                   Keyboard="Telephone" />
+
+            <Label Text="MATÉRIA PRIMA" />
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="FillAndExpand">
+
+                <Button Text="🛒" />
+
+                <Button Text="+" />
+
+            </StackLayout>
+
+            <Entry x:Name="ProdutoEntry"
+                   Placeholder="PRODUTO:" />
+
+            <Picker x:Name="UnidadePicker"
+                    Title="UNIDADE:"
+                    ItemsSource="{Binding Unidades}" />
+
+            <Button Text="FINALIZAR CADASTRO"
+                    x:Name="FinalizarButton" />
+
+            <Button Text="VOLTAR"
+                    x:Name="VoltarButton" />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

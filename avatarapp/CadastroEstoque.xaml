@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.CadastroEstoque"
+             Title="Estoque">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Estoque" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center" />
+
+            <Label Text="Matéria Prima:" />
+            <Picker x:Name="MateriaPrimaPicker" />
+
+            <Label Text="Fornecedor:" />
+            <Picker x:Name="FornecedorPicker" />
+
+            <Label Text="Quantidade:" />
+            <Entry x:Name="QuantidadeEntry" Keyboard="Numeric" />
+
+            <Label Text="Entrada:" />
+            <Entry x:Name="EntradaEntry" Keyboard="Numeric" />
+
+            <Button Text="Adicionar" 
+                    x:Name="AdicionarButton" 
+                    BackgroundColor="#ADD8E6" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

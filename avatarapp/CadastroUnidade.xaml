@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.CadastroUnidade"
+             Title="Cadastro Unidade">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Cadastro Unidade" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+            
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                <Label Text="Nome:" VerticalOptions="Center"/>
+                <Entry x:Name="NomeEntry" Placeholder="Nome" HorizontalOptions="FillAndExpand"/>
+                <Button Text="+" 
+                        WidthRequest="40"
+                        HeightRequest="40"
+                        Clicked="OnAddClicked"/>
+            </StackLayout>
+            
+            <Button Text="Cadastrar" 
+                    BackgroundColor="#87CEEB" 
+                    TextColor="White" 
+                    Clicked="OnCadastrarClicked"
+                    HorizontalOptions="Center"/>
+            
+            <Button Text="Voltar" 
+                    Clicked="OnVoltarClicked"
+                    HorizontalOptions="Center"/>
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

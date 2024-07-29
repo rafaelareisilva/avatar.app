@@ -1,0 +1,15 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.CadastroCortador"
+             Title="Cadastro Cortador">
+
+    <ContentPage.Content>
+        <VerticalStackLayout Spacing="20">
+            <Entry Placeholder="Nome" />
+            <Entry Placeholder="Telefone" Keyboard="Telephone" />
+            <Entry Placeholder="Endereço" />
+            <Button Text="Cadastrar" Clicked="Cadastrar_Clicked" />
+            <Button Text="Voltar" />
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
