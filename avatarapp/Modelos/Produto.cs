@@ -1,5 +1,4 @@
-namespace Modelos
-{
+namespace avatarapp.Modelos;
     public class Produto
     {
       string tipodoproduto;
@@ -9,7 +8,7 @@ namespace Modelos
       string marca;
       int id;
 
-      Int64 id;
+      
 
     public void SetTipodoproduto (string tipodoproduto)
     {

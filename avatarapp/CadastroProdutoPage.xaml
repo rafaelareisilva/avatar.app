@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="avatarapp.VendaProduto"
-             Title="Venda do Produto">
+             x:Class="avatarapp.CadastroProdutoPage"
+             Title="Cadastro Produto">
 
     <ScrollView>
         <StackLayout Padding="20">
-            <Label Text="Venda do Produto" 
+            <Label Text="Cadastro Produto" 
                    FontAttributes="Bold" 
                    FontSize="Large" 
                    HorizontalOptions="Center" 
                    Margin="0,0,0,20"/>
 
-            <Label Text="Cliente:"/>
-            <Entry x:Name="clienteEntry"/>
-
-            <Label Text="Telefone:"/>
-            <Entry x:Name="telefoneEntry"/>
-
-            <Label Text="Itens:"/>
-            <StackLayout Orientation="Horizontal">
-                <Button Text="+" WidthRequest="30" HeightRequest="30"/>
-            </StackLayout>
-
-            <Label Text="Produto:"/>
-            <Entry x:Name="produtoEntry"/>
+            <Label Text="Tipo do Produto:"/>
+            <Entry x:Name="tipoProdutoEntry"/>
 
             <Label Text="Unidade:"/>
             <Picker x:Name="unidadePicker"/>
 
-            <Label Text="Valor:"/>
-            <Entry x:Name="valorEntry"/>
+            <Label Text="Características do Produto:"/>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="carrinho.png" WidthRequest="30" HeightRequest="30"/>
+                <Button Text="+" WidthRequest="30" HeightRequest="30"/>
+            </StackLayout>
 
-            <Button Text="Finalizar" 
+            <Label Text="Cor:"/>
+            <Entry x:Name="corEntry"/>
+
+            <Label Text="Tecido:"/>
+            <Entry x:Name="tecidoEntry"/>
+
+            <Label Text="Marca:"/>
+            <Entry x:Name="marcaEntry"/>
+
+            <Button Text="Cadastrar" 
                     BackgroundColor="#2196F3" 
                     TextColor="White" 
                     CornerRadius="5" 

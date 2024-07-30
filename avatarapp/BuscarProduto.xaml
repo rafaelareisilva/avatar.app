@@ -1,0 +1,21 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.BuscarProduto"
+             Title="Buscar Produto">
+    <ContentPage.Content>
+        <Grid>
+            <VerticalStackLayout Spacing="20">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="BUSCAR:" />
+                    <Entry Placeholder="Digite o nome do produto" x:Name="txtBusca" />
+                    <Button Text="️" Clicked="Limpar_Clicked" />
+                    <Button Text="" Clicked="Atualizar_Clicked" />
+                </StackLayout>
+                <HorizontalStackLayout>
+                    <Button Text="VOLTAR" Clicked="Voltar_Clicked" />
+                    <Button Text="+" Clicked="Adicionar_Clicked" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,5 +1,4 @@
-namespace Modelos
-{
+namespace avatarapp.Modelos;
     public class Estoque
     {
     string materiaPrima;
@@ -8,7 +7,7 @@ namespace Modelos
     string fornecedor;
     int id;
 
-    Int64 id;
+   
 
      public void SetMateriaPrima (string materiaprima)
     {
@@ -16,7 +15,7 @@ namespace Modelos
     }
     public string GetMateriaPrima()
     {
-        return materiaprima;
+        return materiaPrima;
     }
 
     public void SetQuantidade (string quantidade)
@@ -41,7 +40,7 @@ namespace Modelos
     {
         this.fornecedor= fornecedor;
     }
-    public int GetFornecedor()
+    public string GetFornecedor()
     {
         return fornecedor;
     }

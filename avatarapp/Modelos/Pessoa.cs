@@ -1,32 +1,31 @@
-namespace Modelos
-{
+namespace avatarapp.Modelos;
 public class Pessoa
 {
     string nome;
     string telefone;
     int id;
          
-public void GetNome ()
+public string GetNome ()
 {
-    return nome
+    return nome;
 }
 public void SetNome (string n)
 {
     nome=n;
 }
 
-public void GetTelefone ()
+public string GetTelefone ()
 {
-    return telefone
+    return telefone;
 }
 public void SetTelefone (string t)
 {
     telefone=t;
 }
 
-public void GetId ()
+public int GetId ()
 {
-    return id
+    return id;
 }
 public void SetTelefone (int i)
 {

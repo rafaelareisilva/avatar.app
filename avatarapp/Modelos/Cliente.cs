@@ -1,12 +1,11 @@
-namespace Modelos
-{
-public class Cliente : pessoa
+namespace avatarapp.Modelos;
+public class Cliente : Pessoa
 {
     string nome;
     string telefone;
     int id;
-    string endereco
-      Int64 id;
+    string endereco;
+      
     public void SetNome (string nome)
     {
         this.nome= nome;
@@ -44,5 +43,4 @@ public class Cliente : pessoa
     {
         return endereco;
     }
-}
 }

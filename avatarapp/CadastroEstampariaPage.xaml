@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.CadastroEstampariaPage"
+             Title="Cadastro Estamparia">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Cadastro Estamparia" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+            
+            <Label Text="Nome:" />
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="NomeEntry" Placeholder="Nome" HorizontalOptions="FillAndExpand"/>
+                <Button Text="▼" WidthRequest="40" Clicked="OnSelectNomeClicked"/>
+            </StackLayout>
+
+            <Label Text="Produto:" />
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="ProdutoEntry" Placeholder="Produto" HorizontalOptions="FillAndExpand"/>
+                <Button Text="▼" WidthRequest="40" Clicked="OnSelectProdutoClicked"/>
+            </StackLayout>
+
+            <Label Text="Quantidade:" />
+            <Entry x:Name="QuantidadeEntry" Placeholder="Quantidade" Keyboard="Numeric"/>
+
+            <Label Text="Entrada:" />
+            <Entry x:Name="EntradaEntry" Placeholder="Entrada"/>
+
+            <Label Text="Prazo:" />
+            <Entry x:Name="PrazoEntry" Placeholder="Prazo"/>
+
+            <Label Text="Características do Produto:" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="🗑" WidthRequest="40" HeightRequest="40" Clicked="OnDeleteCaracteristicaClicked"/>
+                <Button Text="+" WidthRequest="40" HeightRequest="40" Clicked="OnAddCaracteristicaClicked"/>
+            </StackLayout>
+
+            <Label Text="Cor:" />
+            <Entry x:Name="CorEntry" Placeholder="Cor"/>
+
+            <Button Text="Cadastrar" 
+                    BackgroundColor="#87CEEB" 
+                    TextColor="White" 
+                    Clicked="OnCadastrarClicked"
+                    HorizontalOptions="Center"/>
+
+            <Button Text="Voltar" 
+                    Clicked="OnVoltarClicked"
+                    HorizontalOptions="Center"/>
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

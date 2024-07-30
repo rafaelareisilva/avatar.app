@@ -1,11 +1,10 @@
-namespace Modelos
-{
-    public class FornecedorMp : pessoa
+namespace avatarapp.Modelos;
+    public class FornecedorMp : Pessoa
     {
         int idmp;
         int idfornecedor;
         
-         Int64 id;
+        
 
     public void SetIdmp (int idmp)
     {

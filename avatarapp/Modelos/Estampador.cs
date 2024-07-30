@@ -1,15 +1,14 @@
-namespace Modelos
-{
-public class Estampador : pessoa
+namespace avatarapp.Modelos;
+public class Estampador : Pessoa
 {
     string nome;
     string telefone;
     int id;
     string endereco;
-      Int64 id;
-    public void SetNome (string nome)
+
+    public void SetNome(string nome)
     {
-        this.nome= nome;
+        this.nome = nome;
     }
     public string GetNome()
     {
@@ -17,9 +16,9 @@ public class Estampador : pessoa
     }
 
 
-    public void SetTelefone (string telefone)
+    public void SetTelefone(string telefone)
     {
-        this.telefone= telefone;
+        this.telefone = telefone;
     }
     public string GetTelefone()
     {
@@ -27,22 +26,21 @@ public class Estampador : pessoa
     }
 
 
-      public void SetId (int id)
+    public void SetId(int id)
     {
-        this.id= id;
+        this.id = id;
     }
     public int GetId()
     {
         return id;
     }
 
-          public void SetEndereco (string endereco)
+    public void SetEndereco(string endereco)
     {
-        this.endereco= endereco;
+        this.endereco = endereco;
     }
     public string GetEndereco()
     {
         return endereco;
     }
-}
 }

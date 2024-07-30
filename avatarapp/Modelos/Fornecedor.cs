@@ -1,13 +1,12 @@
-namespace Modelos
-{
-public class Fornecedor : pessoa
+namespace avatarapp.Modelos;
+public class Fornecedor : Pessoa
 {
     string nome;
     string telefone;
     int id;
     string tipodoproduto;
     string unidade;
-     Int64 id;
+     
 
     public void SetNome (string nome)
     {

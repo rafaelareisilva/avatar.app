@@ -1,12 +1,11 @@
-namespace Modelos
-{
-public class Cortador : pessoa
+namespace avatarapp.Modelos;
+public class Cortador : Pessoa
 {
     string nome;
     string telefone;
     int id;
     string endereco;
-      Int64 id;
+      
     public void SetNome (string nome)
     {
         this.nome= nome;
@@ -44,5 +43,4 @@ public class Cortador : pessoa
     {
         return endereco;
     }
-}
 }

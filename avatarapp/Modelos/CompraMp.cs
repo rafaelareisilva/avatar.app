@@ -1,5 +1,4 @@
-namespace Modelos
-{
+namespace avatarapp.Modelos;
 public class CompraMp 
 {
     string nome;
@@ -9,7 +8,7 @@ public class CompraMp
     string unidade;
     decimal valor;
 
-    Int64 id;
+    
     public void SetNome (string nome)
     {
         this.nome= nome;
@@ -69,5 +68,4 @@ public class CompraMp
         return valor;
     }
 
-}
 }

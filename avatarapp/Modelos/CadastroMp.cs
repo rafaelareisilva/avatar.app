@@ -1,11 +1,10 @@
-namespace Modelos
-{
+namespace avatarapp.Modelos;
 public class CadastroMp
 {
     int id;
     string tipodoproduto;
     string unidade;
-     Int64 id;
+     
      
       public void SetId (int id)
     {
@@ -35,8 +34,4 @@ public class CadastroMp
     {
         return unidade;
     }
-
-    
-
-}
 }

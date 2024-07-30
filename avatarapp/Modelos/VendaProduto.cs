@@ -1,5 +1,4 @@
-namespace Modelos
-{
+namespace avatarapp.Modelos;
 public class VendaProduto 
 {
     string nome;
@@ -7,7 +6,7 @@ public class VendaProduto
     int id;
     string produto;
     string unidade;
-     Int64 id;
+    
 
     public void SetNome (string nome)
     {

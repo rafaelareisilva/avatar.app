@@ -1,20 +1,19 @@
-namespace Modelos
+namespace avatarapp.Modelos;
+public class Costura
 {
-    public class Costura 
-    {
-        string nome;
-        string telefone;
-        int id;
-        string produto;
-        string prazo;
-        string quantidade;
-        string entrada;
-        string cor; 
-         Int64 id;
+    string nome;
+    string telefone;
+    int id;
+    string produto;
+    string prazo;
+    string quantidade;
+    string entrada;
+    string cor;
 
-    public void SetNome (string nome)
+
+    public void SetNome(string nome)
     {
-        this.nome= nome;
+        this.nome = nome;
     }
     public string GetNome()
     {
@@ -22,9 +21,9 @@ namespace Modelos
     }
 
 
-    public void SetTelefone (string telefone)
+    public void SetTelefone(string telefone)
     {
-        this.telefone= telefone;
+        this.telefone = telefone;
     }
     public string GetTelefone()
     {
@@ -32,59 +31,58 @@ namespace Modelos
     }
 
 
-      public void SetId (int id)
+    public void SetId(int id)
     {
-        this.id= id;
+        this.id = id;
     }
     public int GetId()
     {
         return id;
     }
 
-    public void SetProduto (string produto)
+    public void SetProduto(string produto)
     {
-        this.produto= produto;
+        this.produto = produto;
     }
     public string GetProduto()
     {
         return produto;
     }
 
-    public void SetPrazo (string prazo)
+    public void SetPrazo(string prazo)
     {
-        this.prazo= prazo;
+        this.prazo = prazo;
     }
     public string GetPrazo()
     {
         return prazo;
     }
 
-    public void SetQuantidade (string quantidade)
+    public void SetQuantidade(string quantidade)
     {
-        this.quantidade= quantidade;
+        this.quantidade = quantidade;
     }
     public string GetQuantidade()
     {
         return quantidade;
     }
 
-    public void SetEntrada (string entrada)
+    public void SetEntrada(string entrada)
     {
-        this.entrada= entrada;
+        this.entrada = entrada;
     }
     public string GetEntrada()
     {
         return entrada;
     }
 
-     public void SetCor (string cor)
+    public void SetCor(string cor)
     {
-        this.cor= cor;
+        this.cor = cor;
     }
     public string GetCor()
     {
         return cor;
     }
-     
-    }
+
 }
