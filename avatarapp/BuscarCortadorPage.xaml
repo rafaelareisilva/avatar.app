@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.BuscarCortadorPage"
+             Title="Buscar Cortador">
+
+    <StackLayout Padding="20" Spacing="10">
+        <Label Text="Buscar Cortador" 
+               FontSize="Large" 
+               HorizontalOptions="Center" 
+               FontAttributes="Bold"/>
+
+        <Label Text="Buscar:" />
+        <StackLayout Orientation="Horizontal">
+            <Entry x:Name="BuscarEntry" Placeholder="Buscar" HorizontalOptions="FillAndExpand"/>
+            <Button Text="🗑" WidthRequest="40" Clicked="OnExcluirClicked"/>
+            <Button Text="⟳" WidthRequest="40" Clicked="OnAtualizarClicked"/>
+        </StackLayout>
+
+        <Button Text="+" 
+                BackgroundColor="#87CEEB" 
+                TextColor="White" 
+                Clicked="OnAddClicked"
+                HorizontalOptions="End"/>
+
+        <!-- Frame para confirmar exclusão -->
+        <Frame x:Name="ExcluirFrame" IsVisible="False" BorderColor="Black" Padding="10">
+            <StackLayout>
+                <Label Text="EXCLUIR?" HorizontalOptions="Center" FontAttributes="Bold"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                    <Button Text="SIM" Clicked="OnConfirmarExcluirClicked"/>
+                    <Button Text="NÃO" Clicked="OnCancelarExcluirClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+        <!-- Frame para confirmar atualização -->
+        <Frame x:Name="AtualizarFrame" IsVisible="False" BorderColor="Black" Padding="10">
+            <StackLayout>
+                <Label Text="DESEJA ATUALIZAR?" HorizontalOptions="Center" FontAttributes="Bold"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                    <Button Text="SIM" Clicked="OnConfirmarAtualizarClicked"/>
+                    <Button Text="NÃO" Clicked="OnCancelarAtualizarClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+    
+</ContentPage>
