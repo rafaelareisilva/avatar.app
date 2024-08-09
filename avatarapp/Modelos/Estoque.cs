@@ -36,7 +36,7 @@ namespace avatarapp.Modelos;
         return entrada;
     }
 
-    public void SetFornecedor (int fornecedor)
+    public void SetFornecedor (string fornecedor)
     {
         this.fornecedor= fornecedor;
     }
@@ -56,4 +56,4 @@ namespace avatarapp.Modelos;
 
     
     }
-}
+

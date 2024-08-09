@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.BuscarEstampariaPage"
+             Title="Buscar Estamparia">
+
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" 
+               Text="Buscar Estamparia"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <StackLayout Grid.Row="1"
+                     Orientation="Horizontal"
+                     VerticalOptions="CenterAndExpand">
+            <Entry x:Name="BuscarEntry"
+                   Placeholder="BUSCAR"
+                   HorizontalOptions="FillAndExpand"/>
+            <Button Text="🔍"
+                    BackgroundColor="Blue"
+                    TextColor="White"
+                    Clicked="OnSearchButtonClicked"/>
+            <Button Text="🔄"
+                    BackgroundColor="Blue"
+                    TextColor="White"
+                    Clicked="OnRefreshButtonClicked"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2"
+                     Orientation="Horizontal"
+                     HorizontalOptions="CenterAndExpand">
+            <Button Text="VOLTAR"
+                    HorizontalOptions="Start"
+                    Clicked="OnBackButtonClicked"/>
+            <Button Text="+"
+                    HorizontalOptions="End"
+                    Clicked="OnAddButtonClicked"/>
+        </StackLayout>
+    </Grid>
+
+    <!-- Frame para confirmação de exclusão -->
+    <Frame x:Name="ExcluirFrame"
+           IsVisible="False"
+           BackgroundColor="White"
+           BorderColor="Black"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           Padding="10">
+        <StackLayout>
+            <Label Text="EXCLUIR?" 
+                   FontSize="Medium"
+                   HorizontalOptions="Center"/>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <Button Text="SIM"
+                        Clicked="OnConfirmDeleteButtonClicked"/>
+                <Button Text="NÃO"
+                        Clicked="OnCancelDeleteButtonClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </Frame>
+
+    <!-- Frame para confirmação de atualização -->
+    <Frame x:Name="AtualizarFrame"
+           IsVisible="False"
+           BackgroundColor="White"
+           BorderColor="Black"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           Padding="10">
+        <StackLayout>
+            <Label Text="DESEJA ATUALIZAR?" 
+                   FontSize="Medium"
+                   HorizontalOptions="Center"/>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <Button Text="SIM"
+                        Clicked="OnConfirmUpdateButtonClicked"/>
+                <Button Text="NÃO"
+                        Clicked="OnCancelUpdateButtonClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </Frame>
+</ContentPage>

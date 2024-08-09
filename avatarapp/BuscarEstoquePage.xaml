@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.BuscarEstoquePage"
+             Title="Buscar Estoque">
+             
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Label Text="Buscar Estoque" 
+               FontAttributes="Bold" 
+               FontSize="Large" 
+               HorizontalOptions="Center" 
+               Grid.Row="0" 
+               Margin="0,0,0,20"/>
+               
+        <StackLayout Orientation="Horizontal" Grid.Row="1">
+            <Entry x:Name="buscarEntry" Placeholder="Buscar..." HorizontalOptions="FillAndExpand"/>
+            <ImageButton Source="lixeira.png" WidthRequest="30" HeightRequest="30" Clicked="OnExcluirClicked"/>
+            <ImageButton Source="atualizar.png" WidthRequest="30" HeightRequest="30" Clicked="OnAtualizarClicked"/>
+        </StackLayout>
+        
+        <Button Text="Adicionar" 
+                BackgroundColor="#2196F3" 
+                TextColor="White" 
+                CornerRadius="5" 
+                Grid.Row="2" 
+                Margin="0,20,0,0" 
+                VerticalOptions="End"
+                Clicked="OnAdicionarClicked"/>
+                
+        <!-- Frame para Excluir -->
+        <Frame x:Name="excluirFrame" 
+               BackgroundColor="LightGray" 
+               IsVisible="False" 
+               CornerRadius="10" 
+               Padding="20"
+               HorizontalOptions="Center" 
+               VerticalOptions="Center">
+            <StackLayout>
+                <Label Text="EXCLUIR?" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button Text="SIM" Clicked="OnConfirmarExcluirClicked"/>
+                    <Button Text="NÃO" Clicked="OnCancelarExcluirClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        
+        <!-- Frame para Atualizar -->
+        <Frame x:Name="atualizarFrame" 
+               BackgroundColor="LightGray" 
+               IsVisible="False" 
+               CornerRadius="10" 
+               Padding="20"
+               HorizontalOptions="Center" 
+               VerticalOptions="Center">
+            <StackLayout>
+                <Label Text="DESEJA ATUALIZAR?" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button Text="SIM" Clicked="OnConfirmarAtualizarClicked"/>
+                    <Button Text="NÃO" Clicked="OnCancelarAtualizarClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

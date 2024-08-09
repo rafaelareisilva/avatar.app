@@ -22,6 +22,30 @@
             
             <Button Text="Voltar" 
                     Clicked="OnVoltarClicked"/>
+            
+            <Frame BorderColor="Black" CornerRadius="10" Padding="10">
+                <StackLayout>
+                    <Label Text="EXCLUIR CLIENTE?" 
+                           HorizontalOptions="Center" 
+                           FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                        <Button Text="SIM" Clicked="OnExcluirSimClicked" BackgroundColor="#87CEEB"/>
+                        <Button Text="NÃO" Clicked="OnExcluirNaoClicked" BackgroundColor="#87CEEB"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            
+            <Frame BorderColor="Black" CornerRadius="10" Padding="10">
+                <StackLayout>
+                    <Label Text="DESEJA ATUALIZAR?" 
+                           HorizontalOptions="Center" 
+                           FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                        <Button Text="SIM" Clicked="OnAtualizarSimClicked" BackgroundColor="#87CEEB"/>
+                        <Button Text="NÃO" Clicked="OnAtualizarNaoClicked" BackgroundColor="#87CEEB"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ScrollView>
     

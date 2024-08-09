@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.MainPage"
+             Title="Entrar">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="ENTRAR" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold" />
+
+            <Button Text="Cliente" x:Name="ClienteButton" />
+            <Button Text="Unidade" x:Name="UnidadeButton" />
+            <Button Text="Pedido" x:Name="PedidoButton" />
+            <Button Text="Fornecedor" x:Name="FornecedorButton" />
+            <Button Text="Matéria Prima" x:Name="MateriaPrimaButton" />
+            <Button Text="Produto" x:Name="ProdutoButton" />
+            <Button Text="Costura" x:Name="CosturaButton" />
+            <Button Text="Cortador" x:Name="CortadorButton" />
+            <Button Text="Corte" x:Name="CorteButton" />
+            <Button Text="Estoque" x:Name="EstoqueButton" />
+            <Button Text="Estamparia" x:Name="EstampariaButton" />
+            <Button Text="Estampador" x:Name="EstampadorButton" />
+            <Button Text="Costureira" x:Name="CostureiraButton" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

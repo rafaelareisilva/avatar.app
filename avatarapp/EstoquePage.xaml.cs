@@ -10,19 +10,35 @@ namespace avatarapp
             InitializeComponent();
 
             AdicionarButton.Clicked += OnAdicionarButtonClicked;
+            VoltarButton.Clicked += OnVoltarButtonClicked;
+            SimButton.Clicked += OnSimButtonClicked;
+            NaoButton.Clicked += OnNaoButtonClicked;
         }
 
         private void OnAdicionarButtonClicked(object sender, EventArgs e)
         {
-            // Lógica para adicionar os dados
-            string materiaPrima = MateriaPrimaPicker.SelectedItem?.ToString();
-            string fornecedor = FornecedorPicker.SelectedItem?.ToString();
-            string quantidade = QuantidadeEntry.Text;
-            string entrada = EntradaEntry.Text;
+            // Exibe a frame de confirmação
+            ConfirmacaoFrame.IsVisible = true;
+        }
 
-            // Implementar a lógica de adicionar aqui
+        private void OnVoltarButtonClicked(object sender, EventArgs e)
+        {
+            // Volta para a página anterior
+            Navigation.PopAsync();
+        }
 
-            DisplayAlert("Sucesso", "Estoque adicionado com sucesso", "OK");
+        private void OnSimButtonClicked(object sender, EventArgs e)
+        {
+            // Implementa a lógica de adicionar o item ao estoque
+            // Esconde a frame de confirmação após a adição
+            ConfirmacaoFrame.IsVisible = false;
+        }
+
+        private void OnNaoButtonClicked(object sender, EventArgs e)
+        {
+            // Esconde a frame de confirmação sem adicionar o item
+            ConfirmacaoFrame.IsVisible = false;
         }
     }
 }
+
