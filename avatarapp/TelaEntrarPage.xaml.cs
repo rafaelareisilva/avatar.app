@@ -3,9 +3,9 @@ using Microsoft.Maui.Controls;
 
 namespace avatarapp
 {
-    public partial class MainPage : ContentPage
+    public partial class TelaEntrarPage : ContentPage
     {
-        public MainPage()
+        public TelaEntrarPage()
         {
             InitializeComponent();
             
