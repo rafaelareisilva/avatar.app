@@ -3,7 +3,7 @@ using LiteDB;
 
 namespace avatarapp.Modelos;
 
-public class CadastroMP 
+public class CadastroMP : Registro
 {
   [BsonId]
   public int Id { get; set; }

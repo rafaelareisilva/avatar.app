@@ -2,9 +2,9 @@ using Microsoft.Maui.Controls;
 
 namespace avatarapp
 {
-    public partial class EstoquePage : ContentPage
+    public partial class CadastroEstoquePage : ContentPage
     {
-        public EstoquePage()
+        public CadastroEstoquePage()
         {
             InitializeComponent();
         }

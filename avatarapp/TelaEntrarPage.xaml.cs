@@ -27,55 +27,55 @@ namespace avatarapp
         private void OnClienteButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Cliente
-            Navigation.PushAsync(new ClientePage());
+            Navigation.PushAsync(new CadastroClientePage());
         }
 
         private void OnUnidadeButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Unidade
-            Navigation.PushAsync(new UnidadePage());
+            Navigation.PushAsync(new CadastroUnidadePage());
         }
 
         private void OnPedidoButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Pedido
-            Navigation.PushAsync(new PedidoPage());
+            Navigation.PushAsync(new CadastroPedidoPage());
         }
 
         private void OnFornecedorButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Fornecedor
-            Navigation.PushAsync(new FornecedorPage());
+            Navigation.PushAsync(new CadastroFornecedor());
         }
 
         private void OnMateriaPrimaButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Matéria Prima
-            Navigation.PushAsync(new MateriaPrimaPage());
+            Navigation.PushAsync(new CadastroMateriaPrima());
         }
 
         private void OnProdutoButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Produto
-            Navigation.PushAsync(new ProdutoPage());
+            Navigation.PushAsync(new CadastroProdutoPage());
         }
 
         private void OnCosturaButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Costura
-            Navigation.PushAsync(new CosturaPage());
+            Navigation.PushAsync(new CadastroCosturaPage());
         }
 
         private void OnCortadorButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Cortador
-            Navigation.PushAsync(new CortadorPage());
+            Navigation.PushAsync(new CadastroCortador());
         }
 
         private void OnCorteButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Corte
-            Navigation.PushAsync(new CortePage());
+            Navigation.PushAsync(new CadastroCortePage());
         }
 
         private void OnEstoqueButtonClicked(object sender, EventArgs e)
@@ -87,19 +87,19 @@ namespace avatarapp
         private void OnEstampariaButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Estamparia
-            Navigation.PushAsync(new EstampariaPage());
+            Navigation.PushAsync(new CadastroEstampariaPage());
         }
 
         private void OnEstampadorButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Estampador
-            Navigation.PushAsync(new EstampadorPage());
+            Navigation.PushAsync(new CadastroEstampadorPage());
         }
 
         private void OnCostureiraButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Costureira
-            Navigation.PushAsync(new CostureiraPage());
+            Navigation.PushAsync(new CadastroCostureiraPage());
         }
     }
 }

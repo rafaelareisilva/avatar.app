@@ -3,11 +3,11 @@ using Microsoft.Maui.Controls;
 
 namespace avatarapp
 {
-    public partial class CompraMateriaPrima : ContentPage
+    public partial class CadastroCompraMateriaPrima : ContentPage
     {
         public List<string> Unidades { get; set; }
 
-        public CompraMateriaPrima()
+        public CadastroCompraMateriaPrima()
         {
             InitializeComponent();
 
