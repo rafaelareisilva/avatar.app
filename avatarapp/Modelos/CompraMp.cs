@@ -2,7 +2,7 @@ using LiteDB;
 
 namespace avatarapp.Modelos;
 
-public class CompraMp 
+public class CompraMp : Registro
 {
   [BsonId]
   public int Id { get; set; }
