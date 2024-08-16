@@ -2,7 +2,7 @@ using LiteDB;
 
 namespace avatarapp.Modelos;
 
-public class Estampa
+public class Estampa : Registro
 {
   [BsonId]
   public int Id { get; set; }
