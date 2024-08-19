@@ -1,10 +1,13 @@
 using System;
+using avatarapp.Modelos;
+using Controles;
 using Microsoft.Maui.Controls;
 
 namespace avatarapp
 {
     public partial class CadastroClientePage : ContentPage
     {
+        ClienteControle clienteControle = new ClienteControle();
         public CadastroClientePage()
         {
             InitializeComponent();
@@ -12,9 +15,12 @@ namespace avatarapp
 
         private void OnCadastrarClicked(object sender, EventArgs e)
         {
-            string nome = NomeEntry.Text;
-            string telefone = TelefoneEntry.Text;
-            string endereco = EnderecoEntry.Text;
+            var c = new Cliente();
+            c.Nome = NomeEntry.Text;
+            c.Telefone = TelefoneEntry.Text;
+            c.Endereco = EnderecoEntry.Text;
+
+            clienteControle.CriarOuAtualizar(c);
 
             // Lógica para cadastrar o cliente
             DisplayAlert("Sucesso", "Cliente cadastrado com sucesso!", "OK");

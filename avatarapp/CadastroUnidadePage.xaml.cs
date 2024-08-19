@@ -1,9 +1,11 @@
+using Controles;
 using Microsoft.Maui.Controls;
 
 namespace avatarapp
 {
     public partial class CadastroUnidadePage : ContentPage
     {
+        UnidadeControle unidadeControle = new UnidadeControle();
         public CadastroUnidadePage()
         {
             InitializeComponent();
@@ -11,6 +13,10 @@ namespace avatarapp
 
         private void OnAddClicked(object sender, EventArgs e)
         {
+            var u = new Unidade();
+            u.Nome = NomeEntry.Text;
+
+            unidadeControle.CriarOuAtualizar(u);
             // Lógica para o botão de adicionar
             // Pode ser utilizado para adicionar uma nova unidade ou qualquer outra lógica necessária
         }
