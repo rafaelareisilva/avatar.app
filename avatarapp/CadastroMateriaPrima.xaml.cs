@@ -5,21 +5,14 @@ namespace avatarapp
 {
     public partial class CadastroMateriaPrima : ContentPage
     {
-        public List<string> Unidades { get; set; }
+        Controles.UnidadeControle unidadeControle = new Controles.UnidadeControle();
 
         public CadastroMateriaPrima()
         {
             InitializeComponent();
+            pickerUnidade.ItemsSource = unidadeControle.LerTodos();
 
-            Unidades = new List<string>
-            {
-                "Quilogramas",
-                "Litros",
-                "Unidades"
-            };
-
-            BindingContext = this;
-
+          
             CadastrarButton.Clicked += OnCadastrarButtonClicked;
             VoltarButton.Clicked += OnVoltarButtonClicked;
         }

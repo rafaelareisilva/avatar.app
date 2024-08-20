@@ -6,7 +6,7 @@
 
     <ScrollView>
         <StackLayout Padding="20">
-            <Label Text="Cadastro Costura" 
+            <Label Text="Envio Costura" 
                    FontAttributes="Bold" 
                    FontSize="Large" 
                    HorizontalOptions="Center" 

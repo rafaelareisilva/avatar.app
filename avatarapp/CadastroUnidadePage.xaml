@@ -14,17 +14,15 @@
             <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
                 <Label Text="Nome:" VerticalOptions="Center"/>
                 <Entry x:Name="NomeEntry" Placeholder="Nome" HorizontalOptions="FillAndExpand"/>
-                <Button Text="+" 
-                        WidthRequest="40"
-                        HeightRequest="40"
-                        Clicked="OnAddClicked"/>
+                
             </StackLayout>
             
             <Button Text="Cadastrar" 
                     BackgroundColor="#87CEEB" 
                     TextColor="White" 
                     Clicked="OnCadastrarClicked"
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="Center"
+                    />
             
             <Button Text="Voltar" 
                     Clicked="OnVoltarClicked"

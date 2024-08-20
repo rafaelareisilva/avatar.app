@@ -22,19 +22,22 @@
 
             <StackLayout Orientation="Horizontal"
                          HorizontalOptions="FillAndExpand">
-
-                <Button Text="🛒" />
-
-                <Button Text="+" />
+              
 
             </StackLayout>
-
-            <Entry x:Name="ProdutoEntry"
-                   Placeholder="PRODUTO:" />
-
-            <Picker x:Name="UnidadePicker"
-                    Title="UNIDADE:"
-                    ItemsSource="{Binding Unidades}" />
+             
+              <Label Text="Produto:" />
+              <Picker x:Name="pickerProduto"
+              ItemDisplayBinding="{Binding Nome}"
+              HorizontalOptions="Fill"/>
+              
+       
+              <StackLayout>
+                <Label Text="Unidade:" />
+                    <Picker x:Name="pickerUnidade"
+                    ItemDisplayBinding="{Binding Nome}"
+                    HorizontalOptions="Fill"/>
+                      </StackLayout>
 
             <Button Text="FINALIZAR CADASTRO"
                     x:Name="FinalizarButton" />

@@ -5,20 +5,16 @@ namespace avatarapp
 {
     public partial class CadastroFornecedor : ContentPage
     {
-        public List<string> Unidades { get; set; }
+        Controles.UnidadeControle unidadeControle = new Controles.UnidadeControle();
+        Controles.ProdutoControle produtoControle = new Controles.ProdutoControle();
+       
 
         public CadastroFornecedor()
         {
             InitializeComponent();
 
-            Unidades = new List<string>
-            {
-                "Unidade 1",
-                "Unidade 2",
-                "Unidade 3"
-            };
+            pickerUnidade.ItemsSource = unidadeControle.LerTodos();
 
-            BindingContext = this;
 
             FinalizarButton.Clicked += OnFinalizarButtonClicked;
             VoltarButton.Clicked += OnVoltarButtonClicked;

@@ -12,11 +12,12 @@
                    HorizontalOptions="Center" />
 
             <Entry x:Name="ProdutoEntry"
-                   Placeholder="PRODUTO:" />
+                   Placeholder="Matéria Prima:" />
 
-            <Picker x:Name="UnidadeDeMedidaPicker"
-                    Title="UNIDADE DE MEDIDA:"
-                    ItemsSource="{Binding Unidades}" />
+                   <Label Text="Unidade:"/>
+                      <Picker x:Name="pickerUnidade"
+                    ItemDisplayBinding="{Binding Nome}"
+                    HorizontalOptions="Fill"/>
 
             <Button Text="CADASTRAR"
                     x:Name="CadastrarButton" />
