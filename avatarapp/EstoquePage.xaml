@@ -4,51 +4,32 @@
              x:Class="avatarapp.EstoquePage"
              Title="Estoque">
 
-    <StackLayout Padding="20" Spacing="10">
-        <Label Text="Estoque" 
-               FontSize="Large" 
-               HorizontalOptions="Center"
-               FontAttributes="Bold" />
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Estoque" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold" />
 
-        <Entry Placeholder="MATÉRIA PRIMA:" 
-               x:Name="MateriaPrimaEntry"/>
-        
-        <Picker Title="FORNECEDOR" x:Name="FornecedorPicker">
-            <!-- Adicionar itens ao Picker aqui -->
-        </Picker>
-        
-        <Entry Placeholder="QUANTIDADE:" 
-               x:Name="QuantidadeEntry"/>
-        
-        <Entry Placeholder="ENTRADA:" 
-               x:Name="EntradaEntry"/>
+            <Label Text="Matéria Prima:" />
+            <Picker x:Name="pickerCadastroMp"
+                    ItemDisplayBinding="{Binding Nome}"
+                    HorizontalOptions="Fill"/>
 
-        <Button Text="ADICIONAR" 
-                x:Name="AdicionarButton"/>
-        
-        <Button Text="VOLTAR" 
-                x:Name="VoltarButton"/>
-    </StackLayout>
+            <Label Text="Fornecedor:" />
+            <Picker x:Name="pickerFornecedor"
+                    ItemDisplayBinding="{Binding Nome}"
+                    HorizontalOptions="Fill"/>
 
-    <!-- Frame de confirmação -->
-    <Frame x:Name="ConfirmacaoFrame"
-           IsVisible="False"
-           Padding="10"
-           BackgroundColor="LightGray"
-           CornerRadius="10"
-           VerticalOptions="Center"
-           HorizontalOptions="Center">
-        <StackLayout>
-            <Label Text="ADICIONAR?" 
-                   HorizontalOptions="Center" />
-            <StackLayout Orientation="Horizontal" 
-                         HorizontalOptions="Center" 
-                         Spacing="20">
-                <Button Text="SIM" 
-                        x:Name="SimButton"/>
-                <Button Text="NÃO" 
-                        x:Name="NaoButton"/>
-            </StackLayout>
+            <Label Text="Quantidade:" />
+            <Entry x:Name="QuantidadeEntry" Keyboard="Numeric" />
+
+            <Label Text="Entrada:" />
+            <Entry x:Name="EntradaEntry" Keyboard="Numeric" />
+
+            <Button Text="Adicionar" 
+                    x:Name="AdicionarButton" 
+                    BackgroundColor="#ADD8E6" />
         </StackLayout>
-    </Frame>
+    </ScrollView>
 </ContentPage>

@@ -12,12 +12,16 @@
                    HorizontalOptions="Center" 
                    Margin="0,0,0,20"/>
 
-            <Label Text="Nome:"/>
-            <Picker x:Name="nomePicker"/>
+            <Label Text="Nome" />
+                <Picker x:Name="pickerCostureira"
+                    ItemDisplayBinding="{Binding Nome}"
+                    HorizontalOptions="Fill"/>
 
-            <Label Text="Produto:"/>
-            <Picker x:Name="produtoPicker"/>
-
+             <Label Text="Produto:" />
+                <Picker x:Name="pickerProduto"
+                    ItemDisplayBinding="{Binding Nome}"
+                    HorizontalOptions="Fill"/>
+                    
             <Label Text="Quantidade:"/>
             <Entry x:Name="quantidadeEntry" Keyboard="Numeric"/>
 

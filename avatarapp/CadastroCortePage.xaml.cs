@@ -5,9 +5,14 @@ namespace avatarapp
 {
     public partial class CadastroCortePage : ContentPage
     {
+        Controles.CortadorControle cortadorControle = new Controles.CortadorControle();
+        Controles.ProdutoControle produtoControle = new Controles.ProdutoControle();
         public CadastroCortePage()
         {
             InitializeComponent();
+
+            pickerCortador.ItemsSource = cortadorControle.LerTodos();
+            pickerProduto.ItemsSource = produtoControle.LerTodos();
 
             VoltarButton.Clicked += OnVoltarButtonClicked;
             CadastrarButton.Clicked += OnCadastrarButtonClicked;
@@ -22,8 +27,8 @@ namespace avatarapp
         private void OnCadastrarButtonClicked(object sender, EventArgs e)
         {
             // Lógica para cadastrar os dados
-            string nome = NomePicker.SelectedItem?.ToString();
-            string produto = ProdutoPicker.SelectedItem?.ToString();
+           
+           
             string quantidade = QuantidadeEntry.Text;
             string entrada = EntradaEntry.Text;
             string prazo = PrazoEntry.Text;

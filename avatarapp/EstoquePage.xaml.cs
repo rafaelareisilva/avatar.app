@@ -1,3 +1,4 @@
+
 using System;
 using Microsoft.Maui.Controls;
 
@@ -5,40 +6,28 @@ namespace avatarapp
 {
     public partial class EstoquePage : ContentPage
     {
+        Controles.CadastroMpControle cadastrompControle = new Controles.CadastroMpControle();
+        Controles.FornecedorControle fornecedorControle = new Controles.FornecedorControle();
         public EstoquePage()
         {
             InitializeComponent();
+            pickerCadastroMp.ItemsSource = cadastrompControle.LerTodos();
+            pickerCadastroMp.ItemsSource = cadastrompControle.LerTodos();
+
 
             AdicionarButton.Clicked += OnAdicionarButtonClicked;
-            VoltarButton.Clicked += OnVoltarButtonClicked;
-            SimButton.Clicked += OnSimButtonClicked;
-            NaoButton.Clicked += OnNaoButtonClicked;
         }
 
         private void OnAdicionarButtonClicked(object sender, EventArgs e)
         {
-            // Exibe a frame de confirmação
-            ConfirmacaoFrame.IsVisible = true;
-        }
+            // Lógica para adicionar os dados
+        
+            string quantidade = QuantidadeEntry.Text;
+            string entrada = EntradaEntry.Text;
 
-        private void OnVoltarButtonClicked(object sender, EventArgs e)
-        {
-            // Volta para a página anterior
-            Navigation.PopAsync();
-        }
+            // Implementar a lógica de adicionar aqui
 
-        private void OnSimButtonClicked(object sender, EventArgs e)
-        {
-            // Implementa a lógica de adicionar o item ao estoque
-            // Esconde a frame de confirmação após a adição
-            ConfirmacaoFrame.IsVisible = false;
-        }
-
-        private void OnNaoButtonClicked(object sender, EventArgs e)
-        {
-            // Esconde a frame de confirmação sem adicionar o item
-            ConfirmacaoFrame.IsVisible = false;
+            DisplayAlert("Sucesso", "Estoque adicionado com sucesso", "OK");
         }
     }
 }
-
