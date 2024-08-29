@@ -23,6 +23,7 @@ namespace avatarapp
             EstampadorButton.Clicked += OnEstampadorButtonClicked;
             CostureiraButton.Clicked += OnCostureiraButtonClicked;
             CompraMPButton.Clicked += OnCompraMPButtonClicked;
+            VendaProdutoButton.Clicked += VendaProdutoButtonClicked;
             
         }
 
@@ -109,7 +110,12 @@ namespace avatarapp
             // Navegar para a página de Costureira
             Navigation.PushAsync(new CadastroCompraMateriaPrima());
         }
-
+            
+         private void VendaProdutoButtonClicked(object sender, EventArgs e)
+        {
+            // Navegar para a página de Costureira
+            Navigation.PushAsync(new VendaProdutoPage());
+        }
         
     }
 }

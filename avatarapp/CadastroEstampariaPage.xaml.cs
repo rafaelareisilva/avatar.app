@@ -4,9 +4,14 @@ namespace avatarapp
 {
     public partial class CadastroEstampariaPage : ContentPage
     {
+        Controles.EstampadorControle estampadorControle = new Controles.EstampadorControle();
+        Controles.ProdutoControle produtoControle = new Controles.ProdutoControle();
         public CadastroEstampariaPage()
         {
             InitializeComponent();
+            pickerEstampador.ItemsSource = estampadorControle.LerTodos();
+            pickerProduto.ItemsSource = produtoControle.LerTodos();
+
         }
 
         private void OnSelectNomeClicked(object sender, EventArgs e)
@@ -32,8 +37,7 @@ namespace avatarapp
         private void OnCadastrarClicked(object sender, EventArgs e)
         {
             // Lógica para o botão "Cadastrar"
-            string nome = NomeEntry.Text;
-            string produto = ProdutoEntry.Text;
+           
             string quantidade = QuantidadeEntry.Text;
             string entrada = EntradaEntry.Text;
             string prazo = PrazoEntry.Text;

@@ -25,6 +25,7 @@
             <Button Text="Estampador" x:Name="EstampadorButton" />
             <Button Text="Costureira" x:Name="CostureiraButton" />
             <Button Text="Compra Matéria Prima" x:Name="CompraMPButton" />
+            <Button Text="Venda Produto" x:Name="VendaProdutoButton" />
             
         </StackLayout>
     </ScrollView>

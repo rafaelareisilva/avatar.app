@@ -14,7 +14,7 @@
             <Label Text="Nome:" />
             <StackLayout Orientation="Horizontal">
                 <Entry x:Name="NomeEntry" Placeholder="Nome" HorizontalOptions="FillAndExpand"/>
-                <Button Text="▼" WidthRequest="40" Clicked="OnSelectNomeClicked"/>
+                
             </StackLayout>
 
             <Label Text="Telefone:" />

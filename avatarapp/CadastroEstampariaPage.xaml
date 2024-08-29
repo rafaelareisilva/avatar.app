@@ -11,17 +11,15 @@
                    HorizontalOptions="Center" 
                    FontAttributes="Bold"/>
             
-            <Label Text="Nome:" />
-            <StackLayout Orientation="Horizontal">
-                <Entry x:Name="NomeEntry" Placeholder="Nome" HorizontalOptions="FillAndExpand"/>
-                <Button Text="▼" WidthRequest="40" Clicked="OnSelectNomeClicked"/>
-            </StackLayout>
+            <Label Text="Estampador:" />
+            <Picker x:Name="pickerEstampador"
+                    ItemDisplayBinding="{Binding Nome}"
+                    HorizontalOptions="Fill"/>
 
             <Label Text="Produto:" />
-            <StackLayout Orientation="Horizontal">
-                <Entry x:Name="ProdutoEntry" Placeholder="Produto" HorizontalOptions="FillAndExpand"/>
-                <Button Text="▼" WidthRequest="40" Clicked="OnSelectProdutoClicked"/>
-            </StackLayout>
+            <Picker x:Name="pickerProduto"
+                    ItemDisplayBinding="{Binding Nome}"
+                    HorizontalOptions="Fill"/>
 
             <Label Text="Quantidade:" />
             <Entry x:Name="QuantidadeEntry" Placeholder="Quantidade" Keyboard="Numeric"/>
@@ -34,7 +32,7 @@
 
             <Label Text="Características do Produto:" FontAttributes="Bold"/>
             <StackLayout Orientation="Horizontal">
-                <Button Text="🗑" WidthRequest="40" HeightRequest="40" Clicked="OnDeleteCaracteristicaClicked"/>
+                
                 <Button Text="+" WidthRequest="40" HeightRequest="40" Clicked="OnAddCaracteristicaClicked"/>
             </StackLayout>
 

@@ -12,7 +12,7 @@
                    FontAttributes="Bold" />
 
             <Label Text="Nome:" />
-            <Picker x:Name="NomePicker" />
+            <Entry x:Name="NomeEntry" Keyboard="Telephone" />
 
             <Label Text="Telefone:" />
             <Entry x:Name="TelefoneEntry" Keyboard="Telephone" />

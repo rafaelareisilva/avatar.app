@@ -11,7 +11,7 @@
                    FontSize="Large"
                    HorizontalOptions="Center" />
 
-            <Entry x:Name="ProdutoEntry"
+            <Entry x:Name="MpEntry"
                    Placeholder="Matéria Prima:" />
 
                    <Label Text="Unidade:"/>

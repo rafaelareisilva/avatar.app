@@ -4,9 +4,12 @@ namespace avatarapp
 {
     public partial class CadastroEstampadorPage : ContentPage
     {
+      
         public CadastroEstampadorPage()
         {
             InitializeComponent();
+            
+           
         }
 
         private void OnSelectNomeClicked(object sender, EventArgs e)

@@ -16,7 +16,7 @@ namespace avatarapp
         private void OnCadastrarClicked(object sender, EventArgs e)
         {
             // Lógica para o botão "Cadastrar"
-            string nome = NomeEntry.Text;
+            
             var u = new Unidade();
             u.Nome = NomeEntry.Text;
 

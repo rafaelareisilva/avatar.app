@@ -12,7 +12,7 @@ namespace avatarapp
         {
             InitializeComponent();
             pickerCadastroMp.ItemsSource = cadastrompControle.LerTodos();
-            pickerCadastroMp.ItemsSource = cadastrompControle.LerTodos();
+            pickerFornecedor.ItemsSource = fornecedorControle.LerTodos();
 
 
             AdicionarButton.Clicked += OnAdicionarButtonClicked;
