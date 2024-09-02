@@ -21,12 +21,19 @@
 
             <!-- Aqui pode ser adicionado um ListView ou CollectionView para mostrar os resultados da busca -->
 
-            <Button Text="Adicionar" 
+            <Button Text="+" 
                     BackgroundColor="#2196F3" 
                     TextColor="White" 
                     CornerRadius="5" 
                     Margin="0,20,0,0" 
                     Clicked="OnAdicionarClicked"/>
+
+                    <Button Text="Voltar" 
+                    BackgroundColor="#2196F3" 
+                    TextColor="White" 
+                    CornerRadius="5" 
+                    Margin="0,20,0,0" 
+                    Clicked="OnVoltarButtonClicked"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

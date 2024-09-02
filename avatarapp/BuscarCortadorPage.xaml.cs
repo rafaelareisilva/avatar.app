@@ -21,7 +21,7 @@ namespace avatarapp
 
         private void OnAddClicked(object sender, EventArgs e)
         {
-            // Lógica para adicionar novo cortador
+            Navigation.PushAsync(new CadastroCortador());
         }
 
         private void OnConfirmarExcluirClicked(object sender, EventArgs e)
@@ -44,6 +44,11 @@ namespace avatarapp
         private void OnCancelarAtualizarClicked(object sender, EventArgs e)
         {
             AtualizarFrame.IsVisible = false;
+        }
+         private async void OnVoltarButtonClicked(object sender, EventArgs e)
+        {
+            // Lógica para voltar à página anterior
+            await Navigation.PopAsync();
         }
     }
 }

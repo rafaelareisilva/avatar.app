@@ -7,8 +7,9 @@
     <Grid Padding="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
+             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         
         <Label Text="Buscar Estoque" 
@@ -23,16 +24,29 @@
             <ImageButton Source="lixeira.png" WidthRequest="30" HeightRequest="30" Clicked="OnExcluirClicked"/>
             <ImageButton Source="atualizar.png" WidthRequest="30" HeightRequest="30" Clicked="OnAtualizarClicked"/>
         </StackLayout>
+
         
+            
         <Button Text="Adicionar" 
                 BackgroundColor="#2196F3" 
                 TextColor="White" 
                 CornerRadius="5" 
-                Grid.Row="2" 
-                Margin="0,20,0,0" 
+                Grid.Row="2"
+                Clicked="OnAdicionarClicked"
+                Margin="0,20,0,0"
                 VerticalOptions="End"
-                Clicked="OnAdicionarClicked"/>
-                
+               />
+
+        <Button Text="Voltar" 
+                BackgroundColor="#2196F3" 
+                TextColor="White" 
+                CornerRadius="5" 
+                Grid.Row="3"  
+                 Margin="0,20,0,0"      
+                Clicked="OnVoltarButtonClicked"
+                VerticalOptions="End"
+                />        
+             
         <!-- Frame para Excluir -->
         <Frame x:Name="excluirFrame" 
                BackgroundColor="LightGray" 

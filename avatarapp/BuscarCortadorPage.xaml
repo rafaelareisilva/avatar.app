@@ -23,6 +23,12 @@
                 Clicked="OnAddClicked"
                 HorizontalOptions="End"/>
 
+                 <Button Text="Voltar" 
+                BackgroundColor="#87CEEB" 
+                TextColor="White" 
+                Clicked="OnVoltarButtonClicked"
+                HorizontalOptions="End"/>
+
         <!-- Frame para confirmar exclusão -->
         <Frame x:Name="ExcluirFrame" IsVisible="False" BorderColor="Black" Padding="10">
             <StackLayout>

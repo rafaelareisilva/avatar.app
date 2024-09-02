@@ -9,7 +9,8 @@
             <Entry Placeholder="Telefone" Keyboard="Telephone" />
             <Entry Placeholder="Endereço" />
             <Button Text="Cadastrar" Clicked="Cadastrar_Clicked" />
-            <Button Text="Voltar" />
+            <Button Text="Voltar"
+            Clicked="OnVoltarButtonClicked" />
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

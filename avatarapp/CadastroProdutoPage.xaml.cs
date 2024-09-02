@@ -11,5 +11,10 @@ namespace avatarapp
             InitializeComponent();
             pickerUnidade.ItemsSource = unidadeControle.LerTodos();
         }
+         private void OnVoltarClicked(object sender, EventArgs e)
+        {
+            // Lógica para o botão "Voltar"
+            Navigation.PopAsync();
+        }
     }
 }

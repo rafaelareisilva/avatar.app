@@ -18,5 +18,10 @@ namespace avatarapp
             await DisplayAlert("Sucesso", "Cortador cadastrado com sucesso!", "OK");
             // Navegar para outra página ou realizar alguma outra ação após o cadastro
         }
+         private async void OnVoltarButtonClicked(object sender, EventArgs e)
+        {
+            // Lógica para voltar à página anterior
+            await Navigation.PopAsync();
+        }
     }
 }

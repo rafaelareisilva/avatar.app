@@ -21,12 +21,12 @@ namespace avatarapp
 
         private void OnBackButtonClicked(object sender, EventArgs e)
         {
-            // Lógica para voltar à página anterior
+           Navigation.PushAsync(new TelaEntrarPage());
         }
 
         private void OnAddButtonClicked(object sender, EventArgs e)
         {
-            // Lógica para adicionar um novo cliente
+            Navigation.PushAsync(new CadastroClientePage());
         }
     }
 }

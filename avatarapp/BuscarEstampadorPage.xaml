@@ -23,14 +23,7 @@
             <Entry x:Name="BuscarEntry"
                    Placeholder="BUSCAR"
                    HorizontalOptions="FillAndExpand"/>
-            <Button Text="🔍"
-                    BackgroundColor="Blue"
-                    TextColor="White"
-                    Clicked="OnSearchButtonClicked"/>
-            <Button Text="🔄"
-                    BackgroundColor="Blue"
-                    TextColor="White"
-                    Clicked="OnRefreshButtonClicked"/>
+            
         </StackLayout>
 
         <StackLayout Grid.Row="2"

@@ -24,15 +24,13 @@ namespace avatarapp
 
         private async void Voltar_Clicked(object sender, EventArgs e)
         {
-            // Lógica para voltar para a página anterior
-            // ... (ex: Navigation.PopAsync())
-            bool answer = await DisplayAlert("Apagar?", "Tem certeza que deseja apagar?", "Sim", "Não");
+             Navigation.PushAsync(new TelaEntrarPage());
+          
         }
 
         private void Adicionar_Clicked(object sender, EventArgs e)
         {
-            // Lógica para adicionar um novo produto
-            // ... (ex: navegar para uma nova página de cadastro, abrir um modal, etc.)
+            Navigation.PushAsync(new CadastroProdutoPage());
         }
     }
 }

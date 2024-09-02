@@ -7,11 +7,18 @@
         <VerticalStackLayout Spacing="20">
             <StackLayout Orientation="Horizontal">
                 <Label Text="BUSCAR:" />
-                <Entry Placeholder="Digite o número do pedido" />
-                <Button Text="" /> </StackLayout>
+                <Entry Placeholder=""
+                 HorizontalOptions="FillAndExpand"
+                 Margin="0,0,20,0"/>
+                 </StackLayout>
             <HorizontalStackLayout>
-                <Button Text="VOLTAR" />
-                <Button Text="+" /> </HorizontalStackLayout>
+                <Button Text="VOLTAR" 
+                 Clicked="Voltar_Clicked"
+                 />
+                <Button Text="+"
+                 Clicked="Adicionar_Clicked" /> 
+                 </HorizontalStackLayout
+                >
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

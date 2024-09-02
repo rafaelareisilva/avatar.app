@@ -30,79 +30,79 @@ namespace avatarapp
         private void OnClienteButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Cliente
-            Navigation.PushAsync(new CadastroClientePage());
+            Navigation.PushAsync(new BuscaDeClientePage());
         }
 
         private void OnUnidadeButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Unidade
-            Navigation.PushAsync(new CadastroUnidadePage());
+            Navigation.PushAsync(new BuscarUnidadePage());
         }
 
         private void OnPedidoButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Pedido
-            Navigation.PushAsync(new CadastroPedidoPage());
+            Navigation.PushAsync(new BuscarPedido());
         }
 
         private void OnFornecedorButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Fornecedor
-            Navigation.PushAsync(new CadastroFornecedor());
+            Navigation.PushAsync(new BuscarFornecedor());
         }
 
         private void OnMateriaPrimaButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Matéria Prima
-            Navigation.PushAsync(new CadastroMateriaPrima());
+            Navigation.PushAsync(new BuscarMateriaPrima());
         }
 
         private void OnProdutoButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Produto
-            Navigation.PushAsync(new CadastroProdutoPage());
+            Navigation.PushAsync(new BuscarProduto());
         }
 
         private void OnCosturaButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Costura
-            Navigation.PushAsync(new CadastroCosturaPage());
+            Navigation.PushAsync(new BuscarCosturaPage());
         }
 
         private void OnCortadorButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Cortador
-            Navigation.PushAsync(new CadastroCortador());
+            Navigation.PushAsync(new BuscarCortadorPage());
         }
 
         private void OnCorteButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Corte
-            Navigation.PushAsync(new CadastroCortePage());
+            Navigation.PushAsync(new BuscarCortePage());
         }
 
         private void OnEstoqueButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Estoque
-            Navigation.PushAsync(new EstoquePage());
+            Navigation.PushAsync(new BuscarEstoquePage());
         }
 
         private void OnEstampariaButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Estamparia
-            Navigation.PushAsync(new CadastroEstampariaPage());
+            Navigation.PushAsync(new BuscarEstampariaPage());
         }
 
         private void OnEstampadorButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Estampador
-            Navigation.PushAsync(new CadastroEstampadorPage());
+            Navigation.PushAsync(new BuscarEstampadorPage());
         }
 
         private void OnCostureiraButtonClicked(object sender, EventArgs e)
         {
             // Navegar para a página de Costureira
-            Navigation.PushAsync(new CadastroCostureiraPage());
+            Navigation.PushAsync(new BuscarCostureiraPage());
         }
 
         private void OnCompraMPButtonClicked(object sender, EventArgs e)

@@ -24,14 +24,12 @@ namespace avatarapp
 
         private void Voltar_Clicked(object sender, EventArgs e)
         {
-            // Lógica para voltar para a página anterior
-            // ... (ex: Navigation.PopAsync())
+            Navigation.PushAsync(new TelaEntrarPage());
         }
 
         private void Adicionar_Clicked(object sender, EventArgs e)
         {
-            // Lógica para adicionar um novo fornecedor
-            // ... (ex: navegar para uma nova página de cadastro, abrir um modal, etc.)
+             Navigation.PushAsync(new CadastroFornecedor());
         }
     }
 }

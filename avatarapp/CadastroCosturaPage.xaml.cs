@@ -13,5 +13,11 @@ namespace avatarapp
             pickerCostureira.ItemsSource = costureiraControle.LerTodos();
             pickerProduto.ItemsSource = produtoControle.LerTodos();
         }
-    }
+         private async void OnVoltarButtonClicked(object sender, EventArgs e)
+        {
+            // Lógica para voltar à página anterior
+            await Navigation.PopAsync();
+        }
+        
+}
 }

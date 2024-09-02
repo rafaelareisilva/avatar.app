@@ -44,7 +44,13 @@ namespace avatarapp
 
         private void OnAdicionarClicked(object sender, EventArgs e)
         {
-            // Lógica para adicionar um novo item
+            Navigation.PushAsync(new CadastroEstoquePage());
+        }
+
+         private async void OnVoltarButtonClicked(object sender, EventArgs e)
+        {
+            // Lógica para voltar à página anterior
+            await Navigation.PopAsync();
         }
     }
 }

@@ -7,8 +7,7 @@
             <StackLayout Orientation="Horizontal">
                 <Label Text="BUSCAR:" />
                 <Entry Placeholder="Digite o nome da matéria-prima" x:Name="txtBusca" />
-                <Button Text="️" Clicked="Limpar_Clicked" />
-                <Button Text="" Clicked="Atualizar_Clicked" />
+            
             </StackLayout>
             <HorizontalStackLayout>
                 <Button Text="VOLTAR" Clicked="Voltar_Clicked" />

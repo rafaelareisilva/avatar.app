@@ -6,13 +6,15 @@
         <VerticalStackLayout Spacing="20">
             <StackLayout Orientation="Horizontal">
                 <Label Text="BUSCAR:" />
-                <Entry Placeholder="Digite o nome do fornecedor" x:Name="txtBusca" />
-                <Button Text="️" Clicked="Limpar_Clicked" />
-                <Button Text="" Clicked="Atualizar_Clicked" />
+                <Entry Placeholder="Digite o nome do fornecedor" x:Name="txtBusca"
+                HorizontalOptions="FillAndExpand" />
+                
             </StackLayout>
             <HorizontalStackLayout>
-                <Button Text="VOLTAR" Clicked="Voltar_Clicked" />
-                <Button Text="+" Clicked="Adicionar_Clicked" />
+                <Button Text="VOLTAR" Clicked="Voltar_Clicked"
+                />
+                <Button Text="+" Clicked="Adicionar_Clicked" 
+                />
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ContentPage.Content>

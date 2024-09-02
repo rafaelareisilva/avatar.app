@@ -22,6 +22,11 @@
                 TextColor="White" 
                 Clicked="OnAddClicked"
                 HorizontalOptions="End"/>
+
+                  <Button Text="Voltar"
+                    BackgroundColor="Blue"
+                    TextColor="White"
+                    Clicked="Voltar_Clicked"/>
                 
         <!-- Frame para confirmar exclusão -->
         <Frame x:Name="ExcluirFrame" IsVisible="False" BorderColor="Black" Padding="10">
