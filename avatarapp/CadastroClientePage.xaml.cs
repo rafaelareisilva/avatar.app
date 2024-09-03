@@ -7,10 +7,24 @@ namespace avatarapp
 {
     public partial class CadastroClientePage : ContentPage
     {
+        public Cliente cliente;
         ClienteControle clienteControle = new ClienteControle();
         public CadastroClientePage()
         {
             InitializeComponent();
+        }
+
+         protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (cliente != null)
+            {
+                IdLabel.Text = cliente.Id.ToString();
+                NomeEntry.Text = cliente.Nome;
+                EnderecoEntry.Text = cliente.Endereco;
+                TelefoneEntry.Text = cliente.Telefone;
+            }
         }
 
         private void OnCadastrarClicked(object sender, EventArgs e)
@@ -54,5 +68,7 @@ namespace avatarapp
             // Lógica para cancelar a atualização
             DisplayAlert("Atualização", "Ação cancelada.", "OK");
         }
+
+         
     }
 }

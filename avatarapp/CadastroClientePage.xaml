@@ -11,6 +11,9 @@
                    HorizontalOptions="Center" 
                    FontAttributes="Bold"/>
             
+
+                <Label x:Name="IdLabel"/>
+
             <Entry x:Name="NomeEntry" Placeholder="Nome"/>
             <Entry x:Name="TelefoneEntry" Placeholder="Telefone"/>
             <Entry x:Name="EnderecoEntry" Placeholder="Endereço"/>

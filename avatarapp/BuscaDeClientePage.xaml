@@ -35,6 +35,35 @@
             <Button Text="+"
                     HorizontalOptions="End"
                     Clicked="OnAddButtonClicked"/>
+
+            <ListView x:Name="ListaClientes"
+           Grid.Row="0"
+              HasUnevenRows="True"
+              ItemSelected="QuandoSelecionarUmItemNaLista"
+              HorizontalOptions="Fill"
+              VerticalOptions="Fill"
+              BackgroundColor="white"
+             >
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <VerticalStackLayout Padding="20"
+                                BackgroundColor="Black">
+              <HorizontalStackLayout>
+                <Label Text="{Binding Nome}"
+                      FontSize="20"/>
+                <Label Text="{Binding Endereço}"
+                      FontSize="20"
+                      Margin="10,0,0,0"/>
+              </HorizontalStackLayout>
+              <Label Text="{Binding Telefone}"
+                      FontSize="20"/>
+            </VerticalStackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
         </StackLayout>
     </Grid>
 </ContentPage>
