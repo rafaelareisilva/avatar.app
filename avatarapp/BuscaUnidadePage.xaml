@@ -9,6 +9,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Label Grid.Row="0" 
@@ -23,14 +24,7 @@
             <Entry x:Name="BuscarEntry"
                    Placeholder="BUSCAR"
                    HorizontalOptions="FillAndExpand"/>
-            <Button Text="🔍"
-                    BackgroundColor="Blue"
-                    TextColor="White"
-                    Clicked="OnSearchButtonClicked"/>
-            <Button Text="🔄"
-                    BackgroundColor="Blue"
-                    TextColor="White"
-                    Clicked="OnRefreshButtonClicked"/>
+            
         </StackLayout>
 
         <StackLayout Grid.Row="2"
@@ -43,5 +37,31 @@
                     HorizontalOptions="End"
                     Clicked="OnAddButtonClicked"/>
         </StackLayout>
+
+        <ListView x:Name="ListaUnidade"
+           Grid.Row="3"
+              HasUnevenRows="True"
+              ItemSelected="QuandoSelecionarUmItemNaLista"
+              HorizontalOptions="Fill"
+              VerticalOptions="Fill"
+              BackgroundColor="white"
+             >
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <VerticalStackLayout Padding="20"
+                                BackgroundColor="blue">
+              <HorizontalStackLayout>
+                <Label Text="{Binding Nome}"
+                      FontSize="20"/>
+               
+              </HorizontalStackLayout>
+              
+            </VerticalStackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
     </Grid>
 </ContentPage>

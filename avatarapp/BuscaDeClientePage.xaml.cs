@@ -11,7 +11,7 @@ namespace avatarapp
         public BuscaDeClientePage()
         {
             InitializeComponent();
-              ListaClientes.ItemsSource = clienteControle.LerTodos();
+             
         }
         
        

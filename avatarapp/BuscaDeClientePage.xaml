@@ -36,8 +36,8 @@
                     HorizontalOptions="End"
                     Clicked="OnAddButtonClicked"/>
 
-            <ListView x:Name="ListaClientes"
-           Grid.Row="0"
+       <ListView x:Name="ListaClientes"
+           Grid.Row="1"
               HasUnevenRows="True"
               ItemSelected="QuandoSelecionarUmItemNaLista"
               HorizontalOptions="Fill"
